@@ -1,11 +1,11 @@
 # swift
 this file is to record some of the most useful methods and questions I had about swift
 
-# array methods. 
-[everything about arrays is in here](https://developer.apple.com/documentation/swift/array)
-| name               | description | reference                                                            |
-|--------------------|-------------|----------------------------------------------------------------------|
-| minStack.append(x) | -           | https://developer.apple.com/documentation/swift/array/3126937-append |
-var last: Element? | 
+# content
+
+| problem                                                                | lesson                    |
+| ---------------------------------------------------------------------- | ------------------------- |
+| [ProductOfArrayExceptSelf](week%203/D1.ProductOfArrayExceptSelf.swift) | arrays with size in swift |
 
 # reference
+[everything about arrays is in here](https://developer.apple.com/documentation/swift/array)
