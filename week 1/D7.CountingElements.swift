@@ -35,7 +35,6 @@ Constraints:
 
 class Solution {
     func countElements(_ arr: [Int]) -> Int {
-        var dict: [Int:Int] = [:]
         var counter: Int = 0
         var hashSet:Set<Int> = []
         
