@@ -61,17 +61,17 @@ class Solution {
         if(left > right){
             return -1;
         }
-        int middle  = (left + right)/ 2;
-        int middleValue = binaryMatrix.get(row, middle);
-        if((middleValue == 1 && middle == 0) ||
-           (middleValue == 1 && binaryMatrix.get(row, middle - 1) == 0)){
-            return middle;
+        int middlePosition  = (left + right)/ 2;
+        int middleValue = binaryMatrix.get(row, middlePosition);
+        if((middleValue == 1 && middlePosition == 0) ||
+           (middleValue == 1 && binaryMatrix.get(row, middlePosition - 1) == 0)){
+            return middlePosition;
         }
         else{
             if(middleValue == 0){ // since is cero it means that the ones are to the right
-                 return binarySearchLeftMost(binaryMatrix,row, middle + 1, right);
+                 return binarySearchLeftMost(binaryMatrix,row, middlePosition + 1, right);
             }else{ //  since is one it means that the largest is on the left
-                return binarySearchLeftMost(binaryMatrix, row, left, middle - 1);
+                return binarySearchLeftMost(binaryMatrix, row, left, middlePosition - 1);
             }
         }
     }

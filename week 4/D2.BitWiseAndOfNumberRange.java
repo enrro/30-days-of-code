@@ -17,9 +17,11 @@ class Solution {
         while(a < b){  
             // -b is the 2's complement of b when do bitwise or with b  
             //we get LSB and we subtract that from b  
-
-            System.out.println(Integer.toBinaryString(b));
-            System.out.println(Integer.toBinaryString(-b));
+            //good techniche to substract less significant bit
+            
+            System.out.println("b:\t"+Integer.toBinaryString(b));
+            System.out.println("-b:\t"+Integer.toBinaryString(-b));
+            System.out.println("b&-b:\t"+Integer.toBinaryString(b & -b));
             
             b -= (b & -b);  
         }  
